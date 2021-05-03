@@ -15,6 +15,8 @@ namespace CollectionDemo
             StackImplementation();
             QueueImplementation();
             DictionaryImplementation();
+            SetImplementation();
+            Console.ReadKey();          
         }
 
         private static void ListImplementation()
@@ -74,6 +76,12 @@ namespace CollectionDemo
             dictionary.Add(70, "Randy");
             dictionary.Add(90, "Max");
             dictionary.Add(80, "Caroline");
+            foreach (var element in dictionary)
+            {
+                Console.WriteLine(element);
+            }
+
+
         }
 
         private static void SetImplementation()
@@ -84,6 +92,12 @@ namespace CollectionDemo
             set.Add("Lucifer");
             set.Add("Morningstar");
             set.Add("Decker");
+
+            foreach (var element in set)
+            {
+                Console.WriteLine(element);
+            }
         }
+
     }
 }
